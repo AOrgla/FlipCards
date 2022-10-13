@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    margin: 150px;
+    background-image: url("https://images.photowall.com/products/64481/voguish-world-map-blue.jpg?h=699&q=85");
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color: rgba(240, 248, 255, 0.5);
+    width: fit-content;
+    margin: 0 auto;
+    border-radius: 40px;
+    padding: 10px;
+
+}
+
+.maincontainer {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 150px);
+    justify-content: center;
+    align-content: center;
+    margin-top: 15px;
+
+}
+
+.maincontainer > .card {
+
+    background-color: rgba(240, 248, 255, 0.7);
+    border-radius: 40px;
+    display: grid;
+    place-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+.card {
+
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
+.card-front {
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.card-back {
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+
+
+
