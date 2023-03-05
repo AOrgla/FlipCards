@@ -5,21 +5,19 @@ body {
     background-image: url("https://images.photowall.com/products/64481/voguish-world-map-blue.jpg?h=699&q=85");
     background-position: center;
     background-repeat: no-repeat;
-
 }
 
 h1 {
     font-family: 'Poppins', sans-serif;
     text-align: center;
-    background-color: rgba(240, 248, 255, 0.5);
+    background-color: rgba(240, 248, 255, 0.7);
     width: fit-content;
     margin: 0 auto;
     border-radius: 40px;
-    padding: 10px;
-
+    padding: 10px
 }
 
-.maincontainer {
+.main-container {
     display: grid;
     grid-gap: 15px;
     grid-template-columns: repeat(3, 150px);
@@ -27,11 +25,9 @@ h1 {
     justify-content: center;
     align-content: center;
     margin-top: 15px;
-
 }
 
-.maincontainer > .card {
-
+.card {
     background-color: rgba(240, 248, 255, 0.7);
     border-radius: 40px;
     display: grid;
@@ -42,9 +38,8 @@ h1 {
 }
 
 .card {
-
     transform-style: preserve-3d;
-    transition: all 0.5s ease;
+    transition: all 1s ease;
 }
 
 .card:hover {
